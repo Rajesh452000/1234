@@ -1,0 +1,18 @@
+<h1 style="position: relative;left: 417px;font-weight: bold;top: -77px;color: #061d49;">{{title}}</h1>
+<div style="position: relative; left: 20%; top: -78px;">
+  <button mat-button (click)="loadProportionChart()" [ngClass]="{'selected': selectedChartType === 'proportion'}">DAS Score proportion</button>
+  <button mat-button (click)="loadMeanChart()" [ngClass]="{'selected': selectedChartType === 'mean'}">DAS Model Estimated Mean</button>
+  <button mat-button (click)="loadCombinationChart()" [ngClass]="{'selected': selectedChartType === 'combination'}">Combination</button>
+</div>
+
+<div id="chartdiv" [ngClass]="{'top-chart': selectedChartType !== 'combination'}" style="width: 100%; height: 500px; position: relative; top: -76px; left: 3%"></div>
+
+
+
+<div style="position: relative; left: 27%; top: -91px;">
+  <button mat-button (click)="loadData1()" [ngClass]="{'selected': selectedData === 'data1'}">Hygiene</button>
+  <button mat-button (click)="loadData2()" [ngClass]="{'selected': selectedData === 'data2'}">Pain</button>
+  <button mat-button (click)="loadData3()" [ngClass]="{'selected': selectedData === 'data3'}">Dressing</button>
+  <button mat-button (click)="loadData4()" [ngClass]="{'selected': selectedData === 'data4'}">Limb Posture</button>
+</div>
+

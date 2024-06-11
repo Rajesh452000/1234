@@ -1,0 +1,111 @@
+<html>
+  <head>
+    <style>
+      /* ...existing styles... */
+      .gradient-div {
+        background: linear-gradient(
+          to bottom,
+          rgba(255, 255, 255, 1),
+          rgba(255, 255, 255, 0)
+        );
+        height: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      class="tab"
+      style="background-color: white; color: #061d49; padding: 0px"
+    >
+      <div class="row">
+        <div class="col-md-11">
+          <mat-tab-group
+            style="
+              background-color: white;
+              color: #061d49;
+              height: 158px;
+              width: 1000px;
+              border-radius: 0px;
+            "
+            mat-stretch-tabs="false"
+            mat-align-tabs="start"
+          >
+            <!-- <mat-tab label="References" style="background-color: white">
+                <div style="display: flex">
+                    <ul style="list-style: none; display: block">
+                <li>Manuscript Number</li>
+                <li>Article Type</li>
+                <li>Keywords</li>
+                <li>Corresponding Author</li>
+                <li>First Author</li>
+                <li>Order of Authors</li>
+              </ul>
+              <ul style="list-style: none">
+                <li>
+                <li>Research Article</li>
+                <li>Spasticity; Botulinum Toxin; Stroke; Adverse Event</li>
+                <li>Gerard E. Francisco, MD <br>
+                  University of Texas McGovern Medical School<br>
+                  Houston, TX UNITED STATES</li>
+                  <li>Gerard E. Francisco, MD<br>
+                  Ganesh Bavikatte, MD<br>
+                  Alberto Esquenazi, MD<br>
+                  Michael A. Dimyan, MD<br>
+                  Khashayar Dashtipour, MD<br>
+                  Wuwei Feng, MD, MS<br>
+                  Angeli Mayadev, MD<br>
+                  Kristina Fanning, PhD<br>
+                  Tiziana Musacchio, PharmD, PhD<br>
+                  Aleksej Zuzek, PhD
+                  </li>
+                
+              </ul>
+            </div>
+            </mat-tab> -->
+
+              <mat-tab label="References" style="transform: scale(0.8);
+              position: relative;
+              left: -72px;">
+              <div style="display: flex;">
+            <ul style="list-style: none">
+              <li>Bavikatte G, Francisco GE, Jost WH, et al. Pain, disability, and quality of life in participants after concurrent onabotulinumtoxin</li>
+              <li>A treatment of upper and lower limb spasticity: Observational results from the ASPIRE study. PM&R. 2024;1‐15. </li>
+                    </ul>
+              </div>
+            </mat-tab>
+          </mat-tab-group>
+        </div>
+        <div class="col-md-1">
+          <button
+            style="color: black;position: absolute;
+            top: 5px;
+            right: 0px;"
+            mat-button
+            mat-dialog-close
+            (click)="openLink($event)"
+          >
+            X
+          </button>
+        </div>
+      </div>
+
+      <!-- <div mat-dialog-actions>
+    <button mat-button mat-dialog-close (click)="openLink($event)">X</button>
+  </div> -->
+    </div>
+
+    <!-- <div class="row">
+  <div class="col-md-11">test</div>
+  <div class="col-md-1">
+    <button mat-button mat-dialog-close (click)="openLink($event)">X</button>
+  </div>
+</div> -->
+
+    <!-- <div class="row">
+  <div class="col-md-11">test</div>
+  <div class="col-md-1">
+    <button mat-button mat-dialog-close (click)="openLink($event)">X</button>
+  </div>
+</div> -->
+  </body>
+</html>

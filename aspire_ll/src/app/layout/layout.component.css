@@ -1,0 +1,386 @@
+.example-card {
+    max-width: 600px;
+  }
+  /* .example-container {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    } */
+  
+  .sample-card {
+  
+    position: relative;
+    max-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    width: 1000px;
+    min-width: 1000px;
+    height: 740px;
+    min-height: 755px;
+    opacity: 1;
+    margin: 0 auto;
+    transform-origin: top center;
+    box-shadow: 0 0 20px rgb(0 0 0 / 20%);
+    zoom: 80%;
+  }
+  
+  .transparent-color {
+    color: transparent;
+  }
+  .red-border {
+    border: 1px solid #476192 !important;
+  }
+  .title {
+    font-size: 26px;
+    line-height: 1em;
+    font-family: Roboto;
+    font-weight: 900;
+    letter-spacing: 0.8px;
+  }
+  .sub-title {
+    font-size: 16px;
+    line-height: 0.5em;
+    font-family: Roboto;
+    font-weight: 400;
+    letter-spacing: 0.8px;
+    margin-right: -95px;
+    padding-top: 15px !important;
+  }
+  .line-title1{
+    font-size: 16px;
+    line-height: 0.5em;
+    font-family: Roboto;
+    font-weight: 400;
+    letter-spacing: 0.8px;
+    margin-right: -60px;
+    padding-top: 15px !important;
+    font-weight: bolder;
+  }
+  .line-title{
+    font-size: 16px;
+    line-height: 0.5em;
+    font-family: Roboto;
+    font-weight: 400;
+    letter-spacing: 0.8px;
+    margin-right: -60px;
+    padding-top: 15px !important;
+    color:transparent;
+  
+  }
+  button {
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    font-weight: normal; /* Set font weight to normal */
+    font-size:12px;
+  }
+  .radio{
+    transform: scale(1.5);
+  }
+  .radio-button {
+    margin-top: -9px;
+    padding: 3px;
+  }
+  .close-icon {
+    margin-top: 12px;
+    margin-left: 216px;
+    transform: scale(2.8);
+  }
+  .modal {
+    display: none;
+    position: fixed;
+    backdrop-filter: blur(5px); /* Adjust the blur value as needed */
+    z-index: 9999;
+    /* z-index: 1; */
+    width: 1000px;
+    height: 740px;
+    overflow: hidden;
+    margin: 0 auto;
+    background-color: rgba(145, 143, 143, 0.4);
+  }
+  .modal-content {
+    display: flex;
+    background-color: #e4ecef;
+    margin: 15% auto;
+    padding: 20px;
+    width: 85%;
+    height: 48%;
+    font-size: 16px;
+    font-weight: normal;
+    top:8%;
+    letter-spacing: 1px;
+    font-family: roboto;
+    color: #061d49;
+    box-shadow: none !important;
+  }
+  
+  
+  .mat-button-toggle-group{
+    padding: 0 !important;
+    border-radius: 6px;
+    border-color: #476192;
+  }
+  ::ng-deep .material-icons{
+    font-size: 16px  !important;
+  }
+  .side-panel {
+    position: relative;/* Add position relative for the pseudo-element to be positioned correctly */
+    background: #eceff4; 
+    padding: 11px !important;
+    margin-left: 15px;
+    margin-top: 3px;
+    border-radius: 7px;
+    accent-color: #061d49;
+    height: 617px;
+    overflow: auto;
+  }
+  
+  .linear-gradient {
+    opacity: 1; 
+    transition: opacity 0.5s ease; /* Add transition for smooth fade-in/out effect */
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: 22px;
+    width: 227px;
+    height: 85px;
+    background: linear-gradient(to bottom, #eceff4, rgba(255, 255, 255, 0)); /* White gradient */
+    z-index: 1; /* Place the pseudo-element above the side panel */
+  }
+  .linear-gradient.hide {
+    display: none;
+  }
+  
+  .linear-gradient-bottom {
+    opacity: 1; 
+    transition: opacity 1s ease; /* Add transition for smooth fade-in/out effect */
+    content: "";
+    position: absolute;
+    top: 536px;
+    left: 22px;
+    width: 227px;
+    height: 85px;
+    background: linear-gradient(to top,  #eceff4, rgba(255, 255, 255, 0)); /* White gradient */
+    z-index: 1; /* Place the pseudo-element above the side panel */
+  }
+  .linear-gradient-bottom.hide {
+    display: none;
+  }
+  .side-panel-title {
+    border-bottom: 1px solid;
+    font-family: Roboto;
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: 600;
+  }
+  .side-panel-sub-title {
+    margin-top: 25px;
+    border-bottom: 1px solid;
+    font-family: Roboto;
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: 600;
+  }
+  .refresh_button{
+    margin-top: -21px;
+    top: 13px;
+    left: 2px;
+  }
+  .home_button{
+    margin-top: -37px;
+    top: -26px;
+    left: 163px;
+  }
+  
+  .side-panel::-webkit-scrollbar {
+    width: 7px; /* width of the entire scrollbar */
+  }
+  
+  .side-panel::-webkit-scrollbar-track {
+    background: #b8c1cb; /* color of the tracking area */
+  }
+  
+  
+  
+  .side-panel::-webkit-scrollbar-thumb {
+    background-color: #5e6a73; /* color of the scroll thumb */
+  
+    border-radius: 20px; /* roundness of the scroll thumb */
+  
+    /* creates padding around scroll thumb */
+  }
+  .mat-button-toggle-checked {
+    background: #476192 !important;
+    color: white  !important;
+  }
+  .radio-btn {
+    font-size: 13px;
+    margin-left: 2vh;
+  }
+  .pictogram_view{
+    margin-top: -13px;
+  }
+  .btn-color {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    padding: 10px 20px;
+    margin: 5px;
+    transition: background-color 0.3s, color 0.3s;
+    cursor: pointer;
+  }
+  .btn-color:hover {
+    background-color: black; /* Background color on hover */
+    color: white; /* Text color on hover */
+  }
+  
+  /* .mat-expansion-panel{
+    padding: 3% !important;
+  } */
+  /* .events{
+    padding: 3% !important;
+  } */
+  /* .ng-tns-c12-0{
+   padding:0% !important;
+  } */
+  
+  /* .mat-expansion-panel-content{
+    background: #eceff4 !important;
+  } */
+  
+  .footnote {
+    margin-right: -69px;
+      width: 750px;
+      font-size: 9px;
+      color: #CF451C;
+      font-weight: bolder;
+      padding: 0px !important;
+      letter-spacing: -0.2px;
+  }
+  
+  .close {
+    color: #061d49;
+    float: right;
+    font-size: 30px;
+    font-weight: bold;
+    position: relative;
+    left: 101vh;
+    height: 4vh;
+  }
+  .btn {
+    padding: 0%;
+  }
+  .closemodal {
+    color:#476192 !important;
+    float: right;
+    font-size: 42px;
+    font-weight: normal !important;
+  
+    position: relative;
+    left: 785px;
+    height: 9vh;
+    text-decoration: none;
+    /* Set initial opacity to 0 */
+  }
+  .mat-expansion-panel-body {
+    padding: 0 !important;
+  }
+  ::ng-deep .mat-button-toggle-appearance-standard .mat-button-toggle-label-content {
+    line-height: 31px !important;
+    width: 58px;
+    border-radius: 4px;
+  }
+  ::ng-deep .mat-expansion-panel-content{
+    padding: 6px;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 18px;
+    letter-spacing: -0.03em;
+    font-family:sans-serif !important;
+  }
+  ::ng-deep .mat-expansion-panel-body {
+    padding: 0px !important;
+  }
+  ::ng-deep .mat-expansion-panel-header.mat-expanded{
+    height: 45px !important;
+  }
+  ::ng-deep .mat-bottom-sheet-container {
+    /* box-shadow: 0px 8px 10px -5px rgba(0, 0, 0, 0.2), 0px 16px 24px 2px rgba(0, 0, 0, 0.14), 0px 6px 30px 5px rgba(0, 0, 0, 0.12); */
+    background: white !important;
+    color: rgba(0, 0, 0, 0.87);
+    position: relative;
+    width: 800px !important;
+    margin:0 auto;
+  
+  
+  }
+  .transparent-text {
+    color: transparent;
+  }
+  ::ng-deep .mat-bottom-sheet-container ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::ng-deep.mat-bottom-sheet-container ::-webkit-scrollbar-thumb {
+    background-color: #5e6a73;
+  }
+  ::ng-deep.mat-bottom-sheet-container ::-webkit-scrollbar-track {
+    background: #b8c1cb;
+  }
+  ::ng-deep.cdk-global-overlay-wrapper {
+
+   height: 600px !important;
+  }
+  ::ng-deep.mat-mdc-tab-body-wrapper{
+    margin-top: 10px !important;
+    font-size: 12px !important;
+    color:black !important;
+  }
+  ::ng-deep .mat-mdc-tab .mdc-tab__text-label{
+    color:white !important;
+  }
+  ::ng-deep .mat-mdc-tab:not(.mat-mdc-tab-disabled).mdc-tab--active .mdc-tab__text-label, .mat-mdc-tab-link:not(.mat-mdc-tab-disabled).mdc-tab--active .mdc-tab__text-label{
+    color:black !important;
+  }
+  ::ng-deep .mat-mdc-tab-body-content {
+    height: 100%;
+    overflow: auto;
+    line-height: 22px;
+    margin-left: 20px;
+  }
+  ::ng-deep dl, ol, ul {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    margin-left: -19px;
+  }
+  
+  
+  .rectangle-box {
+    width: 80%;
+    height: 200px; /* Adjust the height as needed */
+    margin: 0 auto;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+  
+  /* Styling for the paragraph text */
+  .paragraph-text {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+  }
+  .position{
+    top: 82px !important;
+    left: 13px !important;
+    position: relative !important;
+  }
+
+  
+  

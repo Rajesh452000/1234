@@ -1,0 +1,33 @@
+/* chart.component.css */
+button {
+    background-color: white;
+    color: black;
+    border: 0.3px solid rgb(120, 120, 120);
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    font-weight: normal; /* Set font weight to normal */
+    font-size:12px;
+  }
+  
+  button.selected {
+    background-color: black;
+    color: white;
+  }
+  
+  #chartdiv {
+    z-index: 1;
+  }
+  
+
+  #chartdiv.top-chart {
+    z-index: 2;
+  }
+  
+  #chartdivnew {
+    z-index: 1;
+  }
+  
+  #chartdivnew.top-chart {
+    z-index: 2;
+  }
